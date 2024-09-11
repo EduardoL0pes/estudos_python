@@ -1,0 +1,6 @@
+n = input('Digite algo: ')
+print('O que vc digitou é do tipo', type(n))
+print('So tem espaços?', n.isspace())
+print('Esta em letras maiusculas?', n.isupper())
+print('Esta em letras minusculas?', n.islower())
+print('É alfanumérico?', n.isalnum())
