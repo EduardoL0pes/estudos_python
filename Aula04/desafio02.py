@@ -1,6 +1,4 @@
-import math
 oposto = float(input('Digite o valor do cat. oposto: '))
 ad = float(input('Digite o valor do cat. adjacente: '))
-mult = pow(oposto,2) + pow(ad,2)
-hipo = math.sqrt(mult)
-print('O comprimento da Hipotenusa é {}'.format(hipo))
+hipo = (pow(oposto,2) + pow(ad,2)) ** (1/2)
+print('O valor da Hipotenusa é {:.2f}'.format(hipo))
