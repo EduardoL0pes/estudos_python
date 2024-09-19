@@ -1,9 +1,8 @@
-frase = input('Digite uma frase: ').lower()
-tamanho = len(frase)
-e = frase.count('e', 0, tamanho)
+frase = input('Digite uma frase: ').strip().lower()
+e = frase.count('e')
 first = frase.find('e')
 last = frase.rfind('e')
-print("""A frase que você digitou: {}
+print("""
 Quantidade de letras 'e' é: {}
 Primeira letra 'e' fica na posição: {} 
-Ultima letra 'e' fica na posição: {}""".format(frase, e, first, last))
+Ultima letra 'e' fica na posição: {}""".format(e, first, last))
