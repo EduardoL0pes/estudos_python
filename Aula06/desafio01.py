@@ -5,7 +5,7 @@ num = randint(0, 5)
 print('Vou pensar em um número entre 0 e 5. Tente adivinhar...') #computador
 res = int(input('Digite o valor: ')) #jogador
 print('PROCESSANDO...') #tempo de processamento obs:somente estético
-sleep(2) #tempo de precessamento obs:somente estético
+sleep(2) #tempo de processamento obs:somente estético
 if res == num:
     print('Parabéns você acertou!!')
 else:
