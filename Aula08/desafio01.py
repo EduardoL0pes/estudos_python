@@ -1,7 +1,11 @@
+from time import sleep
+
 print('\033[1;33mPor favor para confirmar sua aprovação de empréstimo me passe as seguintes informações para fazermos o calculo:\033[m')
 emprestimo = float(input('Valor do empréstimo: '))
 salario = float(input('Seu Salário: '))
 parcela = int(input('Quantos anos para pagar: '))
+print('\033[1;33mCALCULANDO EMPRÉSTIMO, POR FAVOR AGUARDE...\033[m')
+sleep(2)
 
 conversao = parcela * 12
 div = emprestimo / conversao
