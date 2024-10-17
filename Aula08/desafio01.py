@@ -3,8 +3,9 @@ emprestimo = float(input('Valor do empréstimo: '))
 salario = float(input('Seu Salário: '))
 parcela = int(input('Quantos anos para pagar: '))
 
-div = emprestimo / parcela
-exceder = salario * 30 / 100
+conversao = parcela * 12
+div = emprestimo / conversao
+exceder = salario - salario * 30 / 100
 
 if exceder > div:
     print('\033[1;32mSeu empréstimo foi aprovado!\033[m')
