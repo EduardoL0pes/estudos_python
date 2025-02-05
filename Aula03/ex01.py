@@ -4,6 +4,7 @@
 
 #nome = str(input('Qual é seu nome?'))
 #print('Olá seja Bem Vindo {:=^20}!'.format(nome))
+#print(f'Olá seja Bem Vindo {nome:=^20}!') ####F-Strings(uma forma mais abreviada)
 
 n1 = int(input('Um valor'))
 n2 = int(input('Outro valor'))
