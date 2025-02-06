@@ -4,6 +4,7 @@
 
 #nome = str(input('Qual é seu nome?'))
 #print('Olá seja Bem Vindo {:=^20}!'.format(nome))
+
 #print(f'Olá seja Bem Vindo {nome:=^20}!') ####F-Strings(uma forma mais abreviada)
 
 n1 = int(input('Um valor'))
@@ -14,8 +15,9 @@ d = n1 / n2
 di = n1 // n2
 r = n1 % n2
 e = n1 ** n2
-print('A soma é {}, o produto é {} e a divisão é {:.3f}'.format(s, m, d))
-print('Divisão inteira {}, resto da divisao {} e a potência {}'.format(di, r, e))
+print(f'A soma é {s}, o produto é {m} e a divisão é {d:.3f} \n Div inteira {di}, resto da div {r} e a potência {e}')
+#print('A soma é {}, o produto é {} e a divisão é {:.3f}'.format(s, m, d) end=' ')
+#print('Divisão inteira {}, resto da divisao {} e a potência {}'.format(di, r, e))
 
 #Obs: divisao{:.3f} >> para alterar a quantidade de casas a ser mostrado
 #Quebra linha  -> \n
