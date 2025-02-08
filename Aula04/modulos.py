@@ -9,5 +9,5 @@ from math import sqrt, ceil
 num = int(input('Digite um número: '))
 raiz = sqrt(num)
 #print('A raiz do número {} é {}'.format(num, ceil(raiz)))
-print(f'A raiz do número {num} é {math.ceil(raiz)}')
+print(f'A raiz do número {num} é {ceil(raiz)}')
 # para importar somente os itens específicos de math ex: sqrt e ceil
