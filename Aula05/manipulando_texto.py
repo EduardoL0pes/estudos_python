@@ -30,6 +30,16 @@ frase = 'Tentando Aprender Python'
 #print(frase.split()) #cada palavra na frase ficara numa lista e cada palavra tera seu 'numero' de inicio e termino, alem disso a frase inteira estara numa lista
 #print('-'.join(frase)) #entre as letras ficara com esse '-'
 
+""" Ex.:
+frase = 'Curso em Video Python'.split()
+print('-'.join(frase))
+
+frase = 'Curso em Video Python'
+print('-'.join(frase.split()))
+
+Resultado de ambas: Curso-em-Video-Python 
+"""
+
 print("""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
 incididunt ut labore et dolore magna aliqua. 
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
