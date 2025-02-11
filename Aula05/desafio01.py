@@ -21,5 +21,6 @@ Qt de caracteres: {len(nome)}
 Letras Minúsculas: {nome.lower()}
 Letras Maiúsculas: {nome.upper()}
 Nome sem espaços:  {nome.replace(' ', '')}
+Qt. de caracteres sem os espaços: {len(nome.replace(' ', ''))}
 Qt de caracteres primeiro nome: {len(nome.split()[0])}
 """)
