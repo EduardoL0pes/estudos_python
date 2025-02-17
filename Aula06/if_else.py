@@ -7,3 +7,16 @@ print(f'Parabéns você foi aprovado! \n Média final: {m}' if m>=6 else 'Infeli
     print('Parabéns você passou no teste!')
 else:
     print('Infelizmente você reprovou, mas não desista!')"""
+
+#---------------------------------
+
+print("""Olá, vamos realizar uma continha de adição:
+Quanto é 5 + 2?""")
+print(f'{'':-^20}')
+res = float(input('Escreva sua resposta: '))
+if res == 7:
+    print('Parabéns você ACERTOU!!')
+else:
+    print('Você ERROU! :/')
+print(f'{'FIM':-^20}')
+#Voltarei para implementar loop 
