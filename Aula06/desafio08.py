@@ -1,16 +1,7 @@
-from time import sleep
-
-r1 = float(input('Digite o primeiro valor: '))
-r2 = float(input('Digite o segundo valor: '))
-r3 = float(input('Digite o terceiro valor: '))
-soma = r1 + r2
-print('=-=-' * 10)
-print('Calculando Valores...')
-print('=-=-' * 10)
-sleep(2)
-if soma > r3:
-    print('Valor da soma de {} + {} = {} se for > {} \n Podem se formar um triângulo '.format(r1, r2, soma, r3))
+r1 = float(input('Primeiro segmento: '))
+r2 = float(input('Segundo segmento: '))
+r3 = float(input('Terceiro segmento: '))
+if r1 < r2 + r3 and r2 < r1 + r3 and r3 < r1 + r2:
+    print('A soma entre os segmentos podem formar um triângulo')
 else:
-    print('valor da soma de {} + {} = {} se for < {} \n Não podem formar um triângulo'.format(r1, r2, soma, r3))
-
-"""OBS: O resultado da soma de r1 + r2 não pode ser menor que r3"""
+    print('A soma entre os segmentos não podem formar um triângulo')
