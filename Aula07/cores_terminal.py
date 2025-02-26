@@ -23,4 +23,5 @@ cores = {'limpa': '\033[m',
          'azul': '\033[34m',
          'pretoebranco': '\033[7;40m'}
 
-print('Seja bem vindo, {}{}{}!!'.format(cores['pretoebranco'], nome, cores['limpa']))
+print(f'Seja bem vindo, {cores['azul']}{nome}{core['limpa']}')
+#print('Seja bem vindo, {}{}{}!!'.format(cores['pretoebranco'], nome, cores['limpa']))
