@@ -19,7 +19,7 @@ print(f'Prazer em te conhecer, {'\033[4;34m'}{nome}{'\033[m'}!!')
 
 
 cores = {'limpa': '\033[m',
-         'amarelo': '\033[33m',   #part04
+         'amarelo': '\033[33m',   #part04  Dicionário
          'azul': '\033[34m',
          'pretoebranco': '\033[7;40m'}
 
