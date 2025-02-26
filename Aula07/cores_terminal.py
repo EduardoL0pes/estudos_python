@@ -1,7 +1,7 @@
 """Style            Text    Back
    0 - none          30      40
    1 - bold           á       á
-   4 - Underline     31      47
+   4 - Underline     37      47
    7 - negative
    \033[0;33;44m]"""
 
