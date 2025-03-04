@@ -42,6 +42,6 @@ elif entrada == entrada and entrada > 0:
     novo_calc_parcela = novo_calc_casa / parcela / 12
     novo_calc_salario = salario * 30 / 100
     if novo_calc_parcela >= novo_calc_salario:
-        print('Empréstimo \033[1;31mCOM ENTRADA NEGADO\033[m!')
+        print('Empréstimo \033[1;31mCOM ENTRADA, NEGADO\033[m!')
     else:
-        print('Empréstimo \033[1;32mCOM ENTRADA APROVADO\033[m!')
+        print('Empréstimo \033[1;32mCOM ENTRADA, APROVADO\033[m!')
