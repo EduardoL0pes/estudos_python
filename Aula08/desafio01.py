@@ -25,10 +25,10 @@ print('Simulação do empréstimo: '
 #Opção 02 COM ENTRADA
 from time import sleep
 
-casa = float(input('Digite o valor da casa: '))
-salario = float(input('Seu salário: '))
+casa = float(input('Digite o valor da casa: R$'))
+salario = float(input('Seu salário: R$'))
 parcela = int(input('Quantos anos de financiamento? '))
-entrada = int(input('Valor de entrada: '))
+entrada = int(input('Valor de entrada: R$'))
 print('\033[1;33mCALCULANDO EMPRÉSTIMO, POR FAVOR AGUARDE...\033[m')
 sleep(2)
 calc_parcela = casa / parcela / 12
