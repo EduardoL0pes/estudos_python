@@ -8,5 +8,3 @@ elif nome in 'Juliana Pedro Creuza':
 else:
     print('Seu nome é bem normal')
 print('Tenha uma boa tarde, {}!'.format(nome))
-
-#teste
