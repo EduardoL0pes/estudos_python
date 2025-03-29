@@ -18,13 +18,13 @@ pega"""
 
 #exemplo 03
 """for c in range(6, 0, -1):
-    print(c)        #Contagem regressiva
-print('fim')"""
+    print(c)        
+print('fim')"""     #Contagem regressiva
 
 #exemplo 04
 """for c in range(1, 6):
-    print('oi')  #contagem de 1 a 5 'oi' pois no 6 ele para a execução
-print('fim')"""
+    print('oi')  o
+print('fim')"""     #contagem de 1 a 5 'oi' pois no 6 ele para a execuçã
 
 #exemplo 05
 """for c in range(0,7,2):
