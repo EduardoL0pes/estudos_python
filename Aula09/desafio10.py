@@ -1,7 +1,7 @@
 maior_peso = 0
 menor_peso = 0
 for c in range(5):
-    peso = float(input(f'Informe seu peso{c + 1} (em kg): '))
+    peso = float(input(f'Informe seu peso {c + 1} (em kg): '))
     if c == 0:
         maior_peso = peso
         menor_peso = peso
