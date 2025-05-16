@@ -1,25 +1,22 @@
-"""sexo = ''
-while sexo == '':
-    sexo = input('Informe seu sexo: [M/F] ').upper()
-    if sexo == 'M':
-        print('Dados coletados com sucesso!')
-    if sexo != 'M':
-        print('Sexo informado está incorreto! Tente novamente.')
-        sexo = input('Informa o sexo novamente: ')
-print('fim')"""
-
+nome = input('Digite seu nome: ').strip().title()
+idade = int(input('Digite sua idade: '))
 sexo = ''
+sexoesp = ''
 while sexo == '':
     sexo = input('Informe seu sexo: [M/F] ').upper()
-    if sexo != 'M' and sexo != 'F':
+    if sexo == 'M' or sexo == 'F':
+        print('Dados coletados com sucesso!')
+        if sexo == 'M':
+            sexoesp += 'Maculino'
+        else:
+            sexoesp += 'Feminino'
+    while sexo != 'M' and sexo != 'F':
         print('Sexo informado está incorreto!')
         sexo = input('Informe o sexo novamente: [M/F] ').upper()
-        while sexo != 'M' and sexo != 'F':
-            sexo = input('Informe o sexo novamente: [M/F] ').upper()
-            if sexo == 'M' and sexo != 'F':
-                print('Dados coletados com sucesso!')
-    else:
-        print('Dados coletados com sucesso!')
-print('fim')
-
-"""identificar erro line 15, apos imprimir primeiro erro de sexo, retorna 'fim' em sequência"""
+        if sexo == 'M' or sexo == 'F':
+            print('Dados coletados com sucesso!')
+            if sexo == 'M':
+                sexoesp += 'Masculino'
+            else:
+                sexoesp += 'Feminino'
+print(f'Seu nome é {nome} você tem {idade} anos e é do sexo {sexoesp}.')
