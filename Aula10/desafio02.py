@@ -6,7 +6,6 @@ palpites = 0
 print('\033[1;33m----Jogo de Adivinha----\033[m')
 while num == '':
     num = randint(1,10)
-    print(num)
     palpite = int(input('Digite um número entre 0 á 10: '))
     if num == palpite:
         print('Parabéns você \033[1;32mACERTOU!\033[m \nNossa.. e de primeira, Sortudo!!')
