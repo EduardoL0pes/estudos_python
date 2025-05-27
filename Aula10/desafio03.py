@@ -38,9 +38,9 @@ while num1 == '' and num2 == '':
                 break
         if confirmacao == 'N':
             print('Números sem alteração.')
-        if confirmacao != 'S' or 'N':
+        if confirmacao != 'S' or confirmacao != 'N':
             print('Opção inválidade, tente novamente!')
-            while confirmacao != 'S' and 'N':
+            while confirmacao != 'S' and confirmacao != 'N':
                 novo_num1 = int(input('Digite um novo valor: '))
                 novo_num2 = int(input('Digite outro novo valor: '))
                 print(f'Os números escolhidos foram \033[1;32m{novo_num1} e {novo_num2}\033[m')
