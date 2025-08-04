@@ -39,7 +39,7 @@ while num1 == '' and num2 == '':
         if confirmacao == 'N':
             print('Números sem alteração.')
         if confirmacao != 'S' or confirmacao != 'N':
-            print('Opção inválidade, tente novamente!')
+            print('Opção inválida, tente novamente!')
             while confirmacao != 'S' and confirmacao != 'N':
                 novo_num1 = int(input('Digite um novo valor: '))
                 novo_num2 = int(input('Digite outro novo valor: '))
