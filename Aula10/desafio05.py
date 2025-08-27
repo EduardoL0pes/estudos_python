@@ -11,4 +11,11 @@ while contador < qt_termos:
     print(termo_atual, end=' > ')
     termo_atual += razao #Calcula o próximo termo
     contador += 1  #Incrementa o contador
-print('Acabou!')
+
+res = input('Deseja continar a progressão? [S/N] ').upper
+if res == 'S':
+    nv_termos = 20
+    while termo_atual < nv_termos:
+        print(termo_atual, end=' > ')
+        termo_atual += razao
+        contador += 1
