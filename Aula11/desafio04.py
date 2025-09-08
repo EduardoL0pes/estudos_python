@@ -15,6 +15,6 @@ while True:
     else:
         print('----FIM DO PROGRAMA----')
         print(f'Um total de {maiores} pessoas foram cadastradas.')
-        print(f'Foram cadastrados um total {masc} homens.')
+        print(f'Foram cadastrados {masc} homens.')
         print(f'E um total de {fem} mulheres com menos de 20 anos.')
         break
