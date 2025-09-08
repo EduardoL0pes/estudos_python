@@ -1,9 +1,6 @@
-maiores = 0
-masc = 0
-fem = 0
+maiores = masc = fem = 0
 sexo = ''
 while True:
-    #idade = int(input('Digite a idade: '))
     while sexo != 'M' or sexo != 'F':
         sexo = input('Digite o sexo: [M/F] ').upper().strip()
         if sexo == 'M' or sexo == 'F':
