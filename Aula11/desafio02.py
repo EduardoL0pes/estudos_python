@@ -22,4 +22,4 @@ while True:
     for c in range(1, 11):
         print(f'{tab} x {c} = {tab*c}')
     print('-' * 30)
-print('Finalizando o Programa...')
+print('Programa Finalizado...')
