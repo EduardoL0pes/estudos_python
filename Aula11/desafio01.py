@@ -1,4 +1,5 @@
-num = quant = soma = 0
+#Opção1
+quant = soma = 0
 while True:
     num = int(input('Digite um valor: '))
     if num == 999:
