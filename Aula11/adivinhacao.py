@@ -9,7 +9,7 @@ while True:
               '1 - Fácil\n'
               '2 - Médio\n'
               '3 - Difícil')
-        dif = int(input('Escolha a Difículdade: '))
+        dif = int(input('Escolha a Dificuldade: '))
         if dif == 1:
             print('DIFICULDADE: Fácil \n'
                   'Acerte o número correto entre 1 á 10 com 5 tentativas. Boa Sorte!')
