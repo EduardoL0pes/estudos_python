@@ -22,6 +22,7 @@ while True:
         print('DIFICULDADE: Difícil\n Acerte o número correto entre 1 e 100 com 10 tentativas. Boa Sorte!')
     else:
         print('Opção inválida. Tente novamente')
+        print()
         continue
     computador = randint(1, limite)
     jogador = int(input('Digite seu palpite: '))
