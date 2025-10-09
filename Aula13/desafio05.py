@@ -2,7 +2,7 @@ valores = []
 num_par = []
 num_impar = []
 while True:
-    for c in range(0, 3):
+    for c in range(0, 2):
         num = int(input('Digite um valor: '))
         valores.append(num)
 
