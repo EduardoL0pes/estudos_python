@@ -11,10 +11,8 @@ while True:
         else:
             num_impar.append(num)
 
-    conf = ' '
-    while conf not in 'SN':
-        conf = input('Deseja continuar?: [S/N]').strip().upper()[0]
-    if conf == 'N':
+    conf = input('Deseja continuar?: [S/N]').strip().upper()[0]
+    if conf in 'N':
         break
 
 print(f'Lista dos números: {valores}')
