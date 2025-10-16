@@ -13,7 +13,7 @@
 #galera = [['José', 50], ['Maria', 45], ['Joaquim', 65], ['Ana', 35]]
 # print(galera[0])     #Acessa a lista que esta na posição 0. resultado: ['José', 50]
 # print(galera[0][0])  #Imprime somente o dado da posição 0 da primeira e segunda lista. resultado: José
-# print(galera[0][1])  #Imprime somente o dado da posição 0 da primeira lista e acessa o dado na posição 1 da sunda lista. resultado: 50
+# print(galera[0][1])  #Imprime somente o dado da posição 0 da primeira lista e acessa o dado na posição 1 da segunda lista. resultado: 50
 # print(galera[2][0])  #resultado: Joaquim
 
 #for p in galera:
