@@ -32,8 +32,8 @@
 #         nomes_min.append(p[0])
 #
 # print(f'Ao todo, você cadastrou {len(pessoas)} pessoas.')
-# print(f'O maior peso foi de {max_peso}Kg. Peso de {nomes_max}')
-# print(f'O menor peso foi de {min_peso}Kg. Peso de {nomes_min}')
+# print(f'O maior peso foi de {max_peso}Kg. Peso de {nomes_max}.')
+# print(f'O menor peso foi de {min_peso}Kg. Peso de {nomes_min}.')
 
 
 #Opção02
