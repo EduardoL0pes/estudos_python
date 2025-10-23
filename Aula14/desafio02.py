@@ -1,16 +1,20 @@
 numeros = []
-for n in range(0, 8):
+for n in range(0, 7):
     numeros.append(int(input(f'Digite {n+1}° valor: ')))
 print(f'Lista completa: {numeros}')
 
-print('Números pares:', end=' ')
+num_ordem_p = []
 for num in numeros:
     if num % 2 == 0:
-        print(num, end=' ')
+        num_ordem_p.append(num)
 
-print()
+num_ordem_p.sort()
+print(f'Números pares: {num_ordem_p}')
 
-print('Números ímpares:', end=' ')
+num_ordem_i = []
 for num in numeros:
     if num % 2 == 1:
-        print(num, end=' ')
+        num_ordem_i.append(num)
+
+num_ordem_i.sort()
+print(f'Números ímpares: {num_ordem_i}')
