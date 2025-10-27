@@ -21,3 +21,14 @@
 
 
 # Opção02
+numeros = [[], []]
+for n in range(0, 7):
+    num = int(input(f'Digite {n+1}° valor: '))
+    if num % 2 == 0:
+        numeros[0].append(num)
+    if num % 2 != 0:
+        numeros[1].append(num)
+
+print(f'Pares: {numeros[0]}')
+print(f'Ímpares: {numeros[1]}')
+
