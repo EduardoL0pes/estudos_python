@@ -29,6 +29,6 @@ for n in range(0, 7):
     if num % 2 != 0:
         numeros[1].append(num)
 
-print(f'Pares: {numeros[0]}')
-print(f'Ímpares: {numeros[1]}')
+print(f'Pares: {sorted(numeros[0])}')
+print(f'Ímpares: {sorted(numeros[1])}')
 
