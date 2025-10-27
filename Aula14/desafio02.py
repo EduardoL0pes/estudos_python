@@ -26,7 +26,7 @@ for n in range(0, 7):
     num = int(input(f'Digite {n+1}° valor: '))
     if num % 2 == 0:
         numeros[0].append(num)
-    if num % 2 != 0:
+    else:
         numeros[1].append(num)
 
 print(f'Pares: {sorted(numeros[0])}')
