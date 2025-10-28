@@ -23,6 +23,6 @@ for c in matriz[1]:
 
 print('-='*30)
 print(f'A soma de todos os valores pares da matriz é igual á: {soma}.')
-print(f'A soma dos valores da terceira coluna é igual á: {soma_col3}.')
+print(f'A soma dos valores da terceira coluna é: {soma_col3}.')
 print(f'O maior valor da segunda linha é {maior}.')
 
