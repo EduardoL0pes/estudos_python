@@ -15,7 +15,6 @@ if dados['ctps'] == 0:
 if dados['ctps'] != 0:
     dados['contratação'] = int(input('Ano de contratação: '))
     dados['salário'] = int(input('Salário: R$ '))
-
     dados['aposentadoria'] = (35 - (date.today().year - dados['contratação'])) + dados['idade']
     print('=' * 30)
 
