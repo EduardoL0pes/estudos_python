@@ -1,5 +1,6 @@
 from random import randint
 from time import sleep
+from operator import itemgetter
 
 dic = dict()
 print('Valores sorteados:')
@@ -10,11 +11,10 @@ for j in range(1,5):
     dic[nome_jogador] = num_dado
     print(f'O jogador{j} tirou {num_dado}'.center(30))
 
-ordem = dict(sorted(dic.items(), key=lambda item: item[1], reverse=True))
-print('Os vencedores são:')
+# ordem = dict(sorted(dic.items(), key=lambda item: item[1], reverse=True))
+ordem = list(sorted(dic.items(), key=itemgetter(1), reverse=True))
+print('Ranking dos jogadores são:')
 
-cont = 0
-for k, v in ordem.items():
-    cont += 1
+for k, v in enumerate(ordem):
     sleep(1)
-    print(f'{cont}° lugar: {k} com {v}'.center(30))
+    print(f'{k+1}° lugar: {v[0]} com {v[1]}'.center(30))
