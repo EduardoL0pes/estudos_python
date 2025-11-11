@@ -2,6 +2,8 @@ dic = dict()
 lista = list()
 tot = 0
 soma_idade = 0
+media = 0
+mulheres = list()
 
 while True:
     dic['nome'] = input('Nome: ').title()
@@ -9,8 +11,12 @@ while True:
     dic['idade'] = int(input('Idade: '))
     tot += 1
     soma_idade += dic['idade']
+    media = soma_idade / tot
 
     lista.append(dic.copy())
+
+    if dic['sexo'] == 'F':
+        mulheres.append(dic['nome'])
 
     resp = input('Deseja continuar? [S/N]: ').strip()
     if resp in 'Nn':
@@ -18,9 +24,5 @@ while True:
 
 print('-'*30)
 print(f'Foram cadastradas {tot} pessoas.')
-print(f'A média de idade do grupo é de {soma_idade / tot} anos.')
-
-for i in lista:
-    for v in i.values():
-        if v == 'F':
-            print(dic['nome'])
+print(f'A média de idade do grupo é de {media} anos.')
+print(f'As mulheres cadastradas foram {mulheres}.')
