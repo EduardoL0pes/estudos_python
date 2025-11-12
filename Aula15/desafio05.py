@@ -1,6 +1,5 @@
 pessoas = {}
 pessoas_lista = []
-mulheres = []
 tot = 0
 
 while True:
@@ -9,8 +8,6 @@ while True:
     sexo = input('Sexo [M/F]: ').upper()
     if sexo in 'MF':
         pessoas['sexo'] = sexo
-    if sexo in 'F':
-        mulheres.append(pessoas['nome'])
     elif sexo not in 'MF':
         while sexo not in 'MF':
             print('ERRO, somente M ou F. Tente novamente...')
@@ -29,9 +26,17 @@ while True:
         break
 media = tot / len(pessoas_lista)
 
+print('-='*30)
 print(f'Ao todo foram cadastradas {len(pessoas_lista)} pessoas.')
-print(f'A média de idade das pessoas cadastradas é igual a {media}')
-print(f'As mulheres cadastradas foram ', end='')
-for m in mulheres:
-    print(m, end=' ')
-
+print(f'A média de idade das pessoas cadastradas é igual a {media:5.2f} anos.')
+print(f'As mulheres cadastradas foram: ', end='')
+for m in pessoas_lista:
+    if m['sexo'] == 'F':
+        print(f'{m['nome']} ', end='')
+print()
+print('Lista de pessoas que estão acima da média: ')
+for p in pessoas_lista:
+    if p['idade'] >= media:
+        for k, v in p.items():
+            print(f'{k} = {v}; ', end='')
+        print()
