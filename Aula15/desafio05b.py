@@ -41,4 +41,3 @@ for p in galera:
         print()
 print('-='*30)
 print('<< ENCERRADO >>')
-
