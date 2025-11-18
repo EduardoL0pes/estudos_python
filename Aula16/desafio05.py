@@ -8,8 +8,8 @@ def sorteio():
     for n in range(5):
         num = randint(1,10)
         list_num.append(num)
-        sleep(0.3)
         print(f'{num}', end=' ')
+        sleep(0.3)
     print()
 
 def soma_par():
