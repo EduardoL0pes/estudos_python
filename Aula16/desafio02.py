@@ -1,7 +1,7 @@
 def escreva(txt):
-    traco = '-' * len(txt)
+    traco = '-' * (len(txt) + 4)
     print(traco)
-    print(txt)
+    print(f'  {txt}')
     print(traco)
 
 escreva('Olá Mundo')
