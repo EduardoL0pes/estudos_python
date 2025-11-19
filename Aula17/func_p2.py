@@ -49,15 +49,24 @@
 ### Escopo de variáveis
 
 #Escopo Local
-def teste(b):
-    a = 8
-    b += 4
-    c = 2
-    print(f'A local vale {a}') #8
-    print(f'B local vale {b}') #9 soma A do escopo global com B do escopo local
-    print(f'C local vale {c}') #2
-
+# def teste(b):
+#     global a #Prioriza o valor do A Local, trocando o valor do A global pelo A local (fazendo A valer 8)
+#     a = 8
+#     b += 4
+#     c = 2
+#     print(f'A local vale {a}') #8
+#     print(f'B local vale {b}') #9 soma A do escopo global com B do escopo local.
+#     print(f'C local vale {c}') #2
+#
 #Escopo Global
-a = 5
-print(f'A global vale {a}')
-teste(a)
+# a = 5
+# teste(a)
+# print(f'A global vale {a}')
+
+# ------------------------------------
+
+### Retornando valores
+
+#return
+
+
