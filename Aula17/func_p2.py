@@ -33,7 +33,7 @@
 
 # -----------------------------------
 
-### Argumentos opções
+### Parâmetro opcional
 
 #def somar(a=0,b=0,c=0)  #podendo tbm colocar =0 para todos os parametros e a função somar() 'vazia' não irá aparecer erro
 
