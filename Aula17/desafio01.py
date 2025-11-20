@@ -1,6 +1,5 @@
 def voto(nasc):
     from datetime import date
-    global ano
     data = date.today().year
     calc = data - ano
 
@@ -15,4 +14,3 @@ def voto(nasc):
 
 ano = int(input('Ano de nascimento: '))
 print(voto(ano))
-
