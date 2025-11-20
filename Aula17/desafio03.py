@@ -1,12 +1,13 @@
-def ficha(nome='', gols=0):
-    global n, gol
-
-    if n == '' and gol < 0:
-        print(f'O jogador <Desconhecido> fez {gols} gol(s) no campeonato.')
-    else:
-        print(f'O jogador <{nome}> fez {gols} gol(s) no campeonato.')
+def ficha(jog='<Desconhecido>', gol=0):
+    print(f'O jogador {jog} fez {gol} gol(s) no campeonato.')
 
 n = input('Nome do jogador: ')
-gol = int(input('Quantos gols? '))
-
-ficha(nome=n, gols=gol)
+g = str(input('Número de gols: '))
+if g.isnumeric():
+    g = int(g)
+else:
+    g = 0
+if n.strip() == '':
+    ficha(gol=g)
+else:
+    ficha(n, g)
