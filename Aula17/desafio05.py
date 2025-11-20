@@ -1,4 +1,10 @@
 def notas(*n, sit=False):
+    """
+    Tentei..
+    :param n: recebe varios valores números.
+    :param sit: mostrar ou não a situação do aluno (Aprovado,Recuperação,Reprovado)
+    :return: Retorna o dicionario com as informações do aluno
+    """
     dic = dict()
     dic['aluno'] = n
 
@@ -28,3 +34,4 @@ def notas(*n, sit=False):
 resp = notas(5,9,7, sit=True)
 print(resp)
 
+help(notas)
