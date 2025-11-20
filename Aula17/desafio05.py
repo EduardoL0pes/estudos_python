@@ -2,10 +2,29 @@ def notas(*n, sit=False):
     dic = dict()
     dic['aluno'] = n
 
+    media = sum(dic['aluno'])
+
+    maior = menor = 0
+    for v in dic.values():
+        if v != 0:
+            maior = max(v)
+            menor = min(v)
+    dic['maior'] = maior
+    dic['menor'] = menor
+
+    dic['média'] = media / len(dic['aluno'])
     dic['total de notas'] = len(dic['aluno'])
 
+    if sit:
+        if dic['média'] >= 7:
+            dic['situação'] = 'APROVADO!'
+        elif 5 <= dic['média'] <= 6.9:
+            dic['situação'] = 'RECUPERAÇÃO...'
+        elif dic['média'] <= 4.9:
+            dic['situação'] = 'REPROVADO!!'
 
     return dic
 
-resp = notas(5,6,7)
+resp = notas(5,9,7, sit=True)
 print(resp)
+
