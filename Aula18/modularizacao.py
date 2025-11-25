@@ -1,7 +1,7 @@
 # from uteis import fatorial, dobro
-import uteis
+from pacote import numeros
 
 num = int(input('Digite um valor: '))
-fat = uteis.fatorial(num)
+fat = numeros.fatorial(num)
 print(f'O fatorial de {num} é {fat}')
-print(f'O triplo de {num} é {uteis.triplo(num)}')
+print(f'O triplo de {num} é {numeros.triplo(num)}')
