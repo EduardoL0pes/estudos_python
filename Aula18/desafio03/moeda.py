@@ -1,14 +1,18 @@
-def metada(p=0):
+def metada(p=0, formato=False):
     res = p / 2
-    return res
+    return res if not formato else moeda(res)
 
-def dobro(p=0):
+def dobro(p=0, formato=False):
     res = p * 2
-    return res
+    return res if not formato else moeda(res)
 
-def aumentar(p=0, taxa=0):
+def aumentar(p=0, taxa=0, formato=False):
     res = p + (p * taxa / 100)
-    return res
+    return res if formato is False else moeda(res)
+
+def diminuir(p=0, taxa=0, formato=False):
+    res = p - (p * taxa / 100)
+    return res if formato is False else moeda(res)
 
 def moeda(preco=0, moeda='R$'):
     return f'{moeda}{preco:.2f}'.replace('.',',')
