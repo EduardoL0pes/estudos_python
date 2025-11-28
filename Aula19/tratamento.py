@@ -7,7 +7,7 @@
 # finally:
 #     certo/falha #Opcional
 
-# except Exception as erro:
+# except Exception as erro:    #'erro' é a variavel que criei
 #     print(f'Problema encontrado foi {erro.__class__}')
 
 try:
