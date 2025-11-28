@@ -1,4 +1,5 @@
 from utilidades import moeda
+from utilidades import dado
 
-p = float(input('Digite um preço: R$'))
+p = dado.leia_dinheiro('Digite um preço: R$')
 moeda.resumo(p, 50, 40)
