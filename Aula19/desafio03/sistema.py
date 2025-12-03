@@ -13,8 +13,13 @@ while True:
         # Opção de listar o conteúdo de um arquivo!
         ler_arquivo(arq)
     elif resposta == 2:
-        cabecalho('Opção 2')
+        # Opção de cadastrar uma nova pessoa.
+        cabecalho('NOVO CADASTRO')
+        nome = input('Nome: ').title()
+        idade = leiaint('Idade: ')
+        cadastrar(arq, nome, idade)
     elif resposta == 3:
+        # Opção sair do sistema
         cabecalho('Saindo do sistema... Até logo!')
         break
     else:
